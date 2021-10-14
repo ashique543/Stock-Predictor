@@ -1,0 +1,52 @@
+
+.logo
+{
+    width: 55px;
+}
+.stock_data
+{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(150, 136, 136, 0.549);
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+.stock_data form
+{
+    text-align: center;
+}
+.stock_data input
+{
+    margin: 0 auto;
+}
+.stock_data button
+{
+    width: 100px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgba(34, 33, 33, 0.659);
+    color: white;
+    margin-top: 15px;
+    padding: 5px;
+}
+.stock_data label
+{
+    font-size: 20px;
+}
+.output
+{
+    text-align: center;
+    margin-top: 10px;
+}
+.navbar_brand
+{
+    left: 0;
+}
+.stock_name
+{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
