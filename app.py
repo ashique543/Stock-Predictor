@@ -7,11 +7,11 @@ import numpy as np
 app = Flask(__name__)
 
 modle=pickle.load(open('modle.pkl','rb'))
-@app.route("/")
+@app.route('/', methods=['POST','GET'])
 def hello_world():
     return render_template('index.html')
 
-@app.route("/predict",methods=['POST'])
+@app.route("/predict",methods=['POST','GET'])
 def predict():
     data=[[request.form['high'],request.form['low'],request.form['open'],request.form['volume']]]
     predictions=modle.predict(data)
