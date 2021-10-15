@@ -7,7 +7,7 @@ import numpy as np
 app = Flask(__name__)
 
 modle=pickle.load(open('modle.pkl','rb'))
-@app.route('/', methods=['POST','GET'])
+@app.route("/", methods=['POST','GET'])
 def hello_world():
     return render_template('index.html')
 
