@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Google{% endblock %}
+
+{% block body %}
+<div class="quotes"><p>Investing should be more like watching paint dry or watching grass grow. If you want excitement, take $800 and go to Las Vegas</p></div>
+<div class="stock_data">
+    <div class="stock_name">Google</div>
+  <form action="/predict-google" method="POST">
+    <label for="validationCustom01" class="form-label">High</label>
+    <input type="text" name="high" class="form-control" id="validationCustom01" required style="width: 200px;">
+    <label for="validationCustom01" class="form-label">Low</label>
+    <input type="text" name="low" class="form-control" id="validationCustom01" required style="width: 200px;">
+    <label for="validationCustom01" class="form-label">Open</label>
+    <input type="text" name="open" class="form-control" id="validationCustom01" required style="width: 200px;">
+    <label for="validationCustom01" class="form-label">Volume</label>
+    <input type="text" name="volume" class="form-control" id="validationCustom01" required style="width: 200px;">
+    <button type="submit">Predict</button>
+  </form>
+  <h4 class="output">{{pred}}</h4>
+  </div>
+{% endblock %}

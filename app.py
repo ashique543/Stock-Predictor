@@ -11,12 +11,20 @@ modle=pickle.load(open('modle.pkl','rb'))
 def hello_world():
     return render_template('index.html')
 
-@app.route("/predict",methods=['POST','GET'])
-def predict():
+@app.route("/predict-tesla",methods=['POST','GET'])
+def predict_tesla():
     data=[[request.form['high'],request.form['low'],request.form['open'],request.form['volume']]]
     predictions=modle.predict(data)
     predictions=predictions.reshape(-1)[0]
-    return render_template('index.html',pred='{}'.format(predictions))
+    return render_template('tesla.html',pred='{}'.format(predictions))
+
+@app.route("/tesla")
+def tesla():
+    return render_template('tesla.html')
+
+@app.route("/google")
+def google():
+    return render_template('google.html')
 
 if __name__=="__main__":
     app.run(debug=True)

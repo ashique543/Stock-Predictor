@@ -1,16 +1,30 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&display=swap');
+body
+{
+    background-image: url(/static/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .logo
 {
     width: 55px;
 }
+#brand
+{
+    text-decoration: none;
+    color: black;
+}
 .stock_data
 {
     margin: 0 auto;
+    background-image: url(/static/img/1.jpg);
+    background-size: cover;
     margin-top: 10px;
+    margin-bottom: 80px;
     padding: 10px;
-    background-color: rgba(150, 136, 136, 0.549);
     width: 350px;
     height: auto;
+    color: white;
     border-radius: 20px;
 }
 .stock_data form
@@ -20,13 +34,16 @@
 .stock_data input
 {
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.467);
+    color: white;
+    border: 0px;
 }
 .stock_data button
 {
     width: 100px;
     border-radius: 10px;
     border: 0px;
-    background-color: rgba(34, 33, 33, 0.659);
+    background-color: rgba(211, 23, 23, 0.659);
     color: white;
     margin-top: 15px;
     padding: 5px;
@@ -34,6 +51,7 @@
 .stock_data label
 {
     font-size: 20px;
+    color: white;
 }
 .output
 {
@@ -49,4 +67,53 @@
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
+}
+.list_of_stocks
+{
+    width: 250px;
+    height: 340px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 2px;
+    background-image: url(/static/img/1.jpg);
+    background-size: cover;
+}
+.list_of_stocks ul
+{
+    list-style-type: none;
+    
+}
+.list_of_stocks ul li
+{
+    margin-top: 10px;
+}
+.list_of_stocks ul li a
+{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+.list_of_stocks ul li a:hover
+{
+    background-color: rgba(61, 100, 174, 0.418);
+}
+.list
+{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.quotes p
+{
+    font-size: 26px;
+    padding-left: 10px;
+    padding-right: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
 }
